@@ -1,0 +1,252 @@
+/* HEADER */
+
+.black-bg {
+    display: none;
+}
+
+.mobile-image {
+    width: 100%;
+}
+
+.tablet-image {
+    display: none;
+}
+
+.header-content {
+    padding: 32px 16px 16px;
+}
+
+.header-content > p {
+    margin: 32px 0;
+}
+
+/* MAIN */
+
+main {
+    padding: 120px 16px;
+}
+
+main  img {
+    width: 100%;
+}
+
+.main-top {
+    margin-bottom: 32px;
+}
+
+.main-top-content > h2 {
+    margin: 25px 0 21px;
+}
+
+main > p {
+    margin-bottom: 32px;
+}
+
+.main-image {
+    margin: 16px 0;
+}
+
+.main-content {
+    padding: 48px 24px;
+    background: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.main-content > h2 {
+    color: var(--clr-white);
+}
+
+.main-content p.medium {
+    margin-top: 24px;
+    color: var(--clr-white);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 48px 32px;
+    background: var(--clr-black);
+}
+
+footer > p {
+    margin: 38px 0;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+footer svg:hover path {
+    transition: all .3s ease-in-out;
+}
+
+footer svg:hover path {
+    fill: var(--clr-beige);
+}
+
+@media screen and (min-width: 768px){
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: relative;
+        background-image: url(../assets/tablet/image-hero.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .tablet-image {
+        width: 60%;
+    }
+
+    .header-content {
+        width: 50%;
+        padding: 145px 0;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    /* MAIN */
+
+    main {
+        padding: 140px 40px;
+    }
+
+    .main-content {
+        padding: 85px 29px;
+    }
+
+    .main-top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 11px;
+    }
+
+    .main-top > img {
+        width: 50%;
+    }
+
+    .main-top-content {
+        max-width: 30%;
+    }
+
+    .main-top-content > h2 {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .main-top-content > p {
+        margin-bottom: 65px;
+    }
+
+    .main-grid {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    .main-grid > img {
+        max-width: 50%;
+    }
+
+    .main-grid-right > img {
+        margin: 0;
+        margin-bottom: 11px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 56px 40px;
+    }
+
+    footer > img {
+        width: 110px;
+    }
+
+    footer > p {
+        max-width: 280px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    header,
+    main,
+    footer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .black-bg {
+        display: flex;
+        background-color: var(--clr-black);
+        width: 75%;
+        height: 800px;
+        background-image: url(../assets/desktop/image-hero@2x.jpg);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .black-bg > h1 {
+        color: var(--clr-white);
+        width: 514px;
+        margin: 190px auto 0;
+        mix-blend-mode:difference;
+    }
+
+    .header-content {
+        max-width: 340px;
+    }
+
+    .header-content > h1 {
+        display: none;
+    }
+
+    .header-content > p {
+        margin: 0;
+        margin-bottom: 64px;
+    }
+
+    .main-container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .main-top {
+        margin-bottom: 30px;
+    }
+
+    .main-top-content > h2 {
+        margin-bottom: 32px;
+    }
+
+    .main-grid { 
+        gap: 30px;
+    }
+
+    .main-grid-right > img {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 80px 165px;
+    }        
+
+    footer > img {
+        width: 160px;
+    }
+
+    footer > p {
+        max-width: 430px;
+    }
+}

@@ -1,0 +1,144 @@
+/* Location Page */
+
+.map {
+    position: relative;
+}
+
+.map > .button-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.map > img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* LOCATION */
+
+.location {
+    padding: 48px 16px 56px;
+    background-color: var(--clr-black);
+}
+
+.location h2 {
+    color: var(--clr-white);
+}
+
+.location h4 {
+    color: var(--clr-beige);
+    margin: 48px 0 20px;
+}
+
+.location p {
+    color: var(--clr-white);
+}
+
+.location-right > p {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 48px 32px;
+    background: var(--clr-beige);
+}
+
+
+footer > p {
+    margin: 38px 0;
+    color: var(--clr-white);
+}
+
+.social-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+footer svg path {
+    fill: var(--clr-black);
+    transition: all .3s ease-in-out;
+}
+
+footer svg:hover path {
+    fill: var(--clr-white);
+}
+
+@media screen and (min-width: 768px) {
+    .map > .button-container {
+        left: 40px;
+    }
+
+    /* LOCATION */
+
+    .location {
+        padding: 88px 40px 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .location h2 {
+        max-width: 223px;
+    }
+
+    .location-right {
+        max-width: 400px;
+    }
+
+    .location-right > h4 {
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    footer > img {
+        width: 110px;
+    }
+
+    footer > p {
+        max-width: 280px;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .map > .button-container {
+        left: 160px;
+    }
+
+    .location {
+        padding: 104px 165px 128px;
+    }
+
+    .location-right {
+        max-width: 540px;
+    }
+
+    .location-right > h4 {
+        margin-bottom: 24px;
+    }
+
+    .location-right > p {
+        margin-top: 32px;
+    }
+
+    footer > img {
+        width: 140px;
+    }
+
+    footer > p {
+        max-width: 430px;
+        margin: 0;
+    }
+}
