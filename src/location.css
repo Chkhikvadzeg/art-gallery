@@ -133,6 +133,10 @@ footer svg:hover path {
         margin-top: 32px;
     }
 
+    footer {
+        padding: 80px 165px;
+    } 
+
     footer > img {
         width: 140px;
     }
